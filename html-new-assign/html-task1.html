@@ -1,0 +1,132 @@
+<!-- QUE-1:= Create a simple HTML webpage that includes:
+• A header (<header>), footer (<footer>), main section (<main>), and aside section
+(<aside>).
+• A paragraph with some basic text.
+• A list (both ordered and unordered).
+• A link that opens in a new tab. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+
+        header {
+            background-color: aquamarine;
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        aside {
+            background-color: bisque;
+            width: 20%;
+            padding: 20px;
+            font-size: large;
+        }
+
+        section {
+            display: flex;
+            padding: 2px;
+            margin: 10px;
+        }
+
+        main {
+            height: 500px;
+            width: 80%;
+            background-color: cadetblue;
+            padding: 20px;
+            font-size: 25px;
+        }
+
+        div {
+            background-color: rgb(0, 144, 96);
+            text-align: center;
+            font-size: 25px;
+            padding: 25px;
+        }
+
+        footer {
+            background-color: darkseagreen;
+            font-size: 25px;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section start -->
+    <header>
+        <h1>THIS IS HEADER SECTION</h1>
+    </header>
+    <!-- header section close -->
+
+    <!-- section start -->
+    <section>
+        <!-- aside1 start -->
+        <aside>
+            <h2>this is aside section-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio consequuntur doloribus incidunt hic quam
+                non beatae quisquam placeat, adipisci amet obcaecati, sapiente fugiat tenetur voluptatem ad!
+                Necessitatibus itaque quae expedita.</p>
+        </aside>
+        <!-- aside1 close -->
+
+        <!-- main start -->
+        <main>
+            <H1> this is order list</H1>
+            <ol type="I">
+                <li>BMW</li>
+                <li>CRETA</li>
+                <li>THAR</li>
+                <li>BREZA</li>
+                <li>KIA</li>
+            </ol>
+            <h1> this is unorder list</h1>
+            <ul type="square">
+                <li>apple</li>
+                <li>banana</li>
+                <li>chery</li>
+                <li>watermelon</li>
+                <li>kiwi</li>
+            </ul>
+        </main>
+        <!-- main close -->
+
+        <!-- aside2 start -->
+        <aside>
+            <h2>this is aside section-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur suscipit fugit libero eveniet culpa
+                fuga magnam voluptatibus aperiam amet sunt harum accusantium voluptates sequi voluptas ab, ullam natus
+                repellendus quidem!</p>
+        </aside>
+        <!-- aside2 close -->
+
+
+    </section>
+    <!-- section close -->
+
+    <div>
+        <a href="https://www.flipkart.com/" target="_blank"> click here</a>
+    </div>
+
+    <a href="">
+
+    </a>
+
+    <!-- footer start -->
+    <footer>
+        &copy; this is footer section &reg;
+    </footer>
+    <!-- footer close -->
+</body>
+
+</html>

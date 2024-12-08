@@ -1,0 +1,97 @@
+<!-- Task: Create a product catalog table that includes the following columns:
+• Product Name
+• Product Image (use placeholder image URLs)
+• Price
+• Description
+• Availability (in stock, out ofstock)
+Additional Requirements:
+• Use theadfor the table header.
+• Add a border and some basic styling using inline CSS.
+• Use colspanor rowspanto merge cells where applicable. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalog <table></table>
+    </title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+            color: white;
+
+
+        }
+
+        thead {
+            font-size: 1.2rem;
+        }
+
+        tbody {
+
+            color: #000;
+            font-size: 1.2rem;
+        }
+    </style>
+
+    <table border="1" cellpadding="5" cellspacing="0"
+        style="width:100%; border-collapse:collapse; border-color:#ccc; font-family:Arial, sans-serif; font-size:12px;">
+
+        <thead style="background-color:#f0f0f0; color:#333;">
+            <tr>
+                <th colspan="5" style="text-align:center; padding:10px;">Product Catalog</th>
+            </tr>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Apple iPhone 13</td>
+                <td><img src="https://m.media-amazon.com/images/I/61VuVU94RnL._SL1500_.jpg" alt="" width="200px"></td>
+                <td>$999.99</td>
+                <td>6.1-inch display, dual-camera setup, up to 512GB storage</td>
+                <td>In Stock</td>
+            </tr>
+
+            <tr>
+                <td>Samsung Galaxy S22</td>
+                <td><img src="https://doiqgxrhp4iii.cloudfront.net/S908EZWG_WHITE.webp" alt="" width="200px"></td>
+                <td>$899.99</td>
+                <td>6.2-inch display, triple-camera setup, up to 1TB storage</td>
+                <td>Out of Stock</td>
+            </tr>
+
+            <tr>
+                <td>Google Pixel 6</td>
+                <td><img src="https://cdn.shopify.com/s/files/1/0675/5716/3324/products/Untitleddesign_5_88fa7c28-6f68-4368-b287-3d6fbacd9144.jpg?v=1724648342"
+                        alt="" width="200px"></td>
+                <td>$699.99</td>
+                <td>6.0-inch display, dual-camera setup, up to 256GB storage</td>
+                <td>In Stock</td>
+            </tr>
+
+            <tr>
+                <td>Huawei P60 Pro</td>
+                <td><img src="https://m.media-amazon.com/images/I/617B9vlv+XL._SL1500_.jpg" alt="" width="200px"></td>
+                <td>$2700.99</td>
+                <td>5.2-inch full HD display, 12,P + 12MP camara, up to 256GB storage</td>
+                <td>In Stock</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>

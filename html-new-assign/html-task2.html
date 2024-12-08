@@ -1,0 +1,97 @@
+<!-- : Create a contact form with the following fields:
+• Full name (text input)
+• Email (email input)
+• Phone number (tel input)
+• Subject (dropdown menu)
+• Message (textarea)
+• Submit button
+Additional Requirements:
+• Use appropriate form validation using required, minlength, maxlength, and
+pattern.
+• Link form labels with their corresponding inputs using the forattribute.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrastion form</title>
+    <style>
+        div {
+            padding: 0.5rem;
+            text-align: center;
+            background-color: antiquewhite;
+            color: brown;
+            font-size: 2rem;
+            margin: auto;
+            width: 70%;
+        }
+
+        body {
+            margin-top: 100px;
+        }
+
+        input {
+            padding: 8px;
+        }
+
+        button {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <fieldset>
+            <legend> Basic Data</legend>
+            <form action="../a1.php" method="post">
+
+                <div>
+                    <label for="">Full Name :</label>
+                    <input type="text" required minlength="2" maxlength="50"> <br>
+
+                </div>
+
+                <div>
+                    <label for="">Email :</label>
+                    <input type="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]">
+
+                </div>
+
+                <div>
+                    <label for="">Phone number :</label>
+                    <input type="tel" required pattern="[0-9]{10}">
+
+                </div>
+
+                <div>
+                    <label for="">Subject :</label>
+                    <select name="" id="" required>
+                        <option value="">--select--</option>
+                        <option value="">C</option>
+                        <option value="">C++</option>
+                        <option value="">MONGO DB</option>
+                        <option value="">HTML</option>
+                        <option value="">CSS</option>
+                        <option value="">JAVA SCRIPT</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Message :</label>
+                    <textarea name="Message" id="Message" maxlength="500" minlength="10"></textarea>
+                </div>
+
+                <button type="submit">submit</button>
+
+            </form>
+        </fieldset>
+
+    </div>
+</body>
+
+</html>
